@@ -81,7 +81,7 @@ section {
 .home {
     text-align: center;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background-color: black;
     position: relative;
     display: grid;
@@ -92,7 +92,7 @@ section {
     padding-top: 120px;
 }
 .home-text h1 {
-    font-size: var(--big-font);
+    font-size: clamp(3rem, 1rem + 10vw, var(--big-font));
     color: var(--text-color);
     line-height: 1.11;
     font-weight: 800;
@@ -126,13 +126,19 @@ section {
 }
 .about {
     background: var(--bg-color);
-    display: grid;
-    grid-template-columns: repeat(2,2fr);
+    display: flex;
+    gap: 10em;
 }
-.about-img {
+
+@media (max-width: 40em) {
+    .about {
+        display: block;
+    }
+}
+.about-img img {
     max-width: 100%;
-    width: 490px;
     height: auto;
+    width: 490px;
 }
 .about-text h2 {
     font-size: var(--h2-font);
@@ -439,30 +445,8 @@ input[type="submit"]:hover {
 .icon a:hover {
     transform: translateY(-5px);
 }
-@media (max-width: 1380px){
-    header {
-        padding: 18px 2%;
-        transition: .2s;
-    }
-    section {
-        padding: 80px 2%;
-        transition: .3s;
-    }
-    :root{
-        --big-font: 4.7rem;
-        --h2-font: 2.5rem;
-    }
-    .home-text h4 {
-        font-size: 1.2rem;
-    }
-}
+
 @media (max-width: 1120px) {
-    header {
-        padding: 14px 2%;
-    }
-    .home {
-        height: 85vh;
-    }
     #menu-icon {
         display: block;
     }
@@ -493,56 +477,5 @@ input[type="submit"]:hover {
     }
     .navlist.active {
         top:100%
-    }
-}
-@media (max-width: 770px) {
-    .about {
-        grid-template-columns: 1fr;
-    }
-    .about-img {
-        text-align: center;
-        margin-bottom: 40px;
-    }
-    .contact {
-        text-align: center;
-    }
-    .contact h2 {
-        font-size: 1.4rem;
-    }
-    .copyright {
-        justify-content: center;
-        text-align: center;
-    }
-    .copyright p {
-        margin-bottom: 30px;
-    }
-    .about-text p {
-        width: 100vh;
-    }
-}
-@media (max-width: 750px) {
-    :root {
-        --big-font: 3.5rem;
-        --h2-font: 1.9rem;
-        --p-font: 0.9rem;
-    }
-}
-@media (max-width: 630px) {
-    section {
-        padding: 90px 4%;
-    }
-    header {
-        padding: 14px 4%;
-    }
-    :root {
-        --big-font: 3.2rem;
-        --h2-font: 1.8rem;
-        --p-font: 0.9rem;
-    }
-    .home-text h4 {
-        font-size: 1.2rem;
-    }
-    .about-text p {
-       width: 90%;
     }
 }
