@@ -76,7 +76,7 @@ span {
     display: none;
 }
 section {
-    padding: 120px 16%;
+    padding: 100px 16%;
 }
 .home {
     text-align: center;
@@ -89,7 +89,7 @@ section {
     align-items: center;
 }
 .home-text {
-    padding-top: 120px;
+    padding-top: 50px;
 }
 .home-text h1 {
     font-size: clamp(3rem, 1rem + 10vw, var(--big-font));
@@ -98,13 +98,6 @@ section {
     font-weight: 800;
     letter-spacing: 1px;
     margin: 0 0 25px;
-}
-.home-text h4 {
-    color: var(--text-color);
-    font-size: 1.5rem;
-    line-height: 1.21;
-    font-weight: 700;
-    margin-bottom: 40px;
 }
 .btn {
     display: inline-block;
@@ -135,10 +128,12 @@ section {
         display: block;
     }
 }
-.about-img img {
+.about-img img, .col img {
     max-width: 100%;
     height: auto;
-    width: 490px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
 }
 .about-text h2 {
     font-size: var(--h2-font);
@@ -272,13 +267,13 @@ section {
 .col img {
     max-width: 100%;
     width: 629px;
-    height: auto;
+    max-height: 150px;
     border-radius: 15px;
 }
 .layer {
     background: transparent;
     border: 10px;
-    height: 100%;
+    height: 150px;
     width: 100%;
     position: absolute;
     border-radius: 15px;
@@ -305,22 +300,9 @@ section {
 .layer h3 {
     position: absolute;
     width: 100%;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     font-weight: 500;
-    color: var(--text-color);
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
-    transition: all .35s;
-}
-.layer .project-description {
-    position: absolute;
-    text-align: justify;
-    width: 85%;
-    font-size: 0.8rem;
-    font-weight: 500;
-    color: var(--text-color);
+    color: black;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -328,11 +310,7 @@ section {
     transition: all .35s;
 }
 .layer:hover h3 {
-    bottom: 75%;
-    opacity: 1;
-}
-.layer:hover .project-description {
-    bottom: 35%;
+    bottom: 50%;
     opacity: 1;
 }
 .layer .live {
@@ -352,7 +330,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 70vh;
+    height: 100vh;
 }
 .contact h2 {
     color: var(--text-color);
@@ -394,11 +372,10 @@ input, textarea {
     margin-bottom: 20px;
     color: var(--other-color);
     min-height: 2em;
-}
-input, textarea {
     background-color: white;
     border: none;
     border-radius: 5px;
+    padding-left: 10px;
 }
 input[type="submit"] {
     display: block;
@@ -408,10 +385,10 @@ input[type="submit"] {
     font-size: 1.1rem;
     background: var(--main-color);
     color: var(--text-color);
-    min-width: 100px;
+    min-width: 200px;
     cursor: pointer;
     transition: 0.2s;
-    border-radius: 30px;
+    border-radius: 10px;
 }
 input[type="submit"]:hover {
     transform: scale(1.1);
@@ -477,5 +454,38 @@ input[type="submit"]:hover {
     }
     .navlist.active {
         top:100%
+    }
+    
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 60px 5%; 
+    }
+
+    .about {
+        flex-direction: column;
+        gap: 2em;
+        text-align: center;
+    }
+
+    .about-img {
+        margin-bottom: 2rem;
+    }
+
+    .service-container, .portfolio-container {
+        grid-template-columns: 1fr; 
+    }
+
+    .stack-container {
+        margin-right: 20px; 
+    }
+
+    .contact {
+        height: auto; 
+    }
+
+    input[type="submit"] {
+        width: 100%; 
     }
 }
