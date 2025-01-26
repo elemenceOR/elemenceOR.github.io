@@ -31,5 +31,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     sr.reveal('.home-text', {delay: 300, origin: 'bottom'});
-    sr.reveal('.about, .service, .projects, .contact', {delay: 100, origin: 'bottom'});
+    sr.reveal('.about, .projects, .contact', {delay: 100, origin: 'bottom'});
 });
