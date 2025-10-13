@@ -6,7 +6,7 @@
     <title>Sadeep Ariyarathna</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <link rel="icon" href="img\icon.png" type="image/x-icon">
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
@@ -14,16 +14,22 @@
     <nav class="navbar">
     <div class="nav-container">
         <div class="logo">Sadeep Ariyarathna</div>
-        <div class="nav-toggle" id="nav-toggle">
-            <i class='bx bx-menu'></i>
-        </div>
-        <ul class="nav-links" id="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#projects">Projects</a></li>
+        <div class="nav-actions">
+            <div class="nav-toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+            <li><a href="#home" data-i18n="nav.home">Home</a></li>
+            <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+            <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+            <li><a href="#education" data-i18n="nav.education">Education</a></li>
+            <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
         </ul>
+            <div class="lang-switcher" aria-label="Language switcher">
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="de">DE</button>
+            </div>
+        </div>
     </div>
 </nav>
 
@@ -35,9 +41,9 @@
             <div class="shape"></div>
         </div>
         <div class="hero-content fade-in">
-            <h1>Hello!<br>I'm<br>Sadeep</h1>
-            <div class="subtitle">Mechatronics & Systems Engineer</div>
-            <p class="description">
+            <h1 data-i18n="hero.hi">Hello!<br>I'm<br>Sadeep</h1>
+            <div class="subtitle" data-i18n="hero.subtitle">Mechatronics & Systems Engineer</div>
+            <p class="description" data-i18n="hero.location">
                 Dortmund, Germany
             </p>
             <div class="cta-buttons">
@@ -51,9 +57,15 @@
                     <a href="mailto:sadeepari@gmail.com" class="social-icon">
                         <i class='bx bx-mail-send'></i>
                     </a>
-                    <a href="cv\cv - Sadeep Ariyarathna.pdf" target="_blank" class="social-icon">
-                        <i class='bx bx-download'></i>
-                    </a>
+                        <div class="cv-dropdown">
+                            <button id="cv-btn" class="social-icon" aria-haspopup="true" aria-expanded="false">
+                                <i class='bx bx-download'></i>
+                            </button>
+                            <div id="cv-menu" class="cv-menu" role="menu" aria-hidden="true">
+                                <a href="cv/cv%20-%20Sadeep%20Ariyarathna.pdf" download class="cv-item" role="menuitem" data-i18n="cv.en">Download CV (EN)</a>
+                                <a href="cv_de/cv%20-%20Sadeep%20Ariyarathna.pdf" download class="cv-item" role="menuitem" data-i18n="cv.de">Download CV (DE)</a>
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>
@@ -61,8 +73,8 @@
 
     <!-- Skills Section -->
     <section class="section" id="skills">
-        <h2 class="section-title fade-in">Technical Expertise</h2>
-        <p class="section-subtitle fade-in">Comprehensive skill set spanning robotics, AI, and engineering design</p>
+    <h2 class="section-title fade-in" data-i18n="skills.title">Technical Expertise</h2>
+    <p class="section-subtitle fade-in" data-i18n="skills.subtitle">Comprehensive skill set spanning robotics, AI, and engineering design</p>
         
         <div class="skills-grid">
             <div class="skill-card fade-in">
@@ -111,8 +123,8 @@
 
     <!-- Experience & Education Section -->
     <section class="section" id="experience">
-        <h2 class="section-title fade-in">Professional Journey & Education</h2>
-        <p class="section-subtitle fade-in">Building expertise through diverse engineering challenges and academic excellence</p>
+    <h2 class="section-title fade-in" data-i18n="experience.title">Professional Journey & Education</h2>
+    <p class="section-subtitle fade-in" data-i18n="experience.subtitle">Building expertise through diverse engineering challenges and academic excellence</p>
         
         <div class="timeline-section">
             <div class="timeline-column fade-in">
@@ -121,28 +133,28 @@
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
-                            <h4>E/E Architecture Intern</h4>
-                            <div class="company">CLAAS E-Systems, Germany</div>
-                            <div class="duration">2024 Oct - 2025 July</div>
-                            <p>Developed efficient and user-friendly workflows for architecture model merging and merge conflict resolution.</p>
+                            <h4 data-i18n="work.claas.title">E/E Architecture Intern</h4>
+                            <div class="company" data-i18n="work.claas.company">CLAAS E-Systems, Germany</div>
+                            <div class="duration" data-i18n="work.claas.duration">2024 Oct - 2025 July</div>
+                            <p data-i18n="work.claas.desc">Developed efficient and user-friendly workflows for architecture model merging and merge conflict resolution.</p>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
-                            <h4>Mechatronics Engineer</h4>
-                            <div class="company">AtlasLabs, Sri Lanka</div>
-                            <div class="duration">2022 - 2023</div>
-                            <p>Led PCB design projects, component validation, and 3D design for production. Implemented automation solutions and managed full product development lifecycle.</p>
+                            <h4 data-i18n="work.atlas.title">Mechatronics Engineer</h4>
+                            <div class="company" data-i18n="work.atlas.company">AtlasLabs, Sri Lanka</div>
+                            <div class="duration" data-i18n="work.atlas.duration">2022 - 2023</div>
+                            <p data-i18n="work.atlas.desc">Led PCB design projects, component validation, and 3D design for production. Implemented automation solutions and managed full product development lifecycle.</p>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
-                            <h4>Engineering Intern</h4>
-                            <div class="company">MAS Holdings, Sri Lanka</div>
-                            <div class="duration">2021 - 2022</div>
-                            <p>Designed manufacturing components using DFA/DFM principles, programmed PLCs, and developed control systems for industrial automation.</p>
+                            <h4 data-i18n="work.mas.title">Engineering Intern</h4>
+                            <div class="company" data-i18n="work.mas.company">MAS Holdings, Sri Lanka</div>
+                            <div class="duration" data-i18n="work.mas.duration">2021 - 2022</div>
+                            <p data-i18n="work.mas.desc">Designed manufacturing components using DFA/DFM principles, programmed PLCs, and developed control systems for industrial automation.</p>
                         </div>
                     </div>
                 </div>
@@ -154,19 +166,19 @@
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
-                            <h4>Master of Engineering</h4>
-                            <div class="company">South Westphalia University of Applied Sciences, Germany</div>
-                            <div class="duration">2025</div>
-                            <p>Specialized in System Engineering and Engineering Management with focus on control systems, machine learning, system architecture, and project management.</p>
+                            <h4 data-i18n="edu.master.title">Master of Engineering</h4>
+                            <div class="company" data-i18n="edu.master.company">South Westphalia University of Applied Sciences, Germany</div>
+                            <div class="duration" data-i18n="edu.master.duration">2025</div>
+                            <p data-i18n="edu.master.desc">Specialized in System Engineering and Engineering Management with focus on control systems, machine learning, system architecture, and project management.</p>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
-                            <h4>Bachelor of Engineering</h4>
-                            <div class="company">General Sir John Kotelawala Defence University, Sri Lanka</div>
-                            <div class="duration">2022</div>
-                            <p>Specialized in Mechatronics Engineering with focus on control systems, automation, robotics, and mechanical design.</p>
+                            <h4 data-i18n="edu.bachelor.title">Bachelor of Engineering</h4>
+                            <div class="company" data-i18n="edu.bachelor.company">General Sir John Kotelawala Defence University, Sri Lanka</div>
+                            <div class="duration" data-i18n="edu.bachelor.duration">2022</div>
+                            <p data-i18n="edu.bachelor.desc">Specialized in Mechatronics Engineering with focus on control systems, automation, robotics, and mechanical design.</p>
                         </div>
                     </div>
                 </div>
@@ -176,8 +188,8 @@
 
     <!-- Projects Section -->
     <section class="section" id="projects">
-        <h2 class="section-title fade-in">Featured Projects</h2>
-        <p class="section-subtitle fade-in">Innovative solutions at the intersection of AI, robotics, and engineering</p>
+    <h2 class="section-title fade-in" data-i18n="projects.title">Featured Projects</h2>
+    <p class="section-subtitle fade-in" data-i18n="projects.subtitle">Innovative solutions at the intersection of AI, robotics, and engineering</p>
         
         <div class="projects-grid">
             <div class="project-card fade-in">
@@ -188,8 +200,8 @@
                     </div>
                 </div>
                 <div class="project-content">
-                    <h3 class="project-title">Intelligent Grid Navigation</h3>
-                    <p class="project-description">Advanced reinforcement learning system for autonomous navigation in complex grid environments with dynamic obstacles.</p>
+                    <h3 class="project-title" data-i18n="project.grid.title">Intelligent Grid Navigation</h3>
+                    <p class="project-description" data-i18n="project.grid.desc">Advanced reinforcement learning system for autonomous navigation in complex grid environments with dynamic obstacles.</p>
                     <div class="project-tech">
                         <span class="tech-tag">Python</span>
                         <span class="tech-tag">RL</span>
@@ -206,8 +218,8 @@
                     </div>
                 </div>
                 <div class="project-content">
-                    <h3 class="project-title">Anti-Sway Crane Control</h3>
-                    <p class="project-description">Non-linear control system for precision crane operations, minimizing payload oscillation during movement.</p>
+                    <h3 class="project-title" data-i18n="project.crane.title">Anti-Sway Crane Control</h3>
+                    <p class="project-description" data-i18n="project.crane.desc">Non-linear control system for precision crane operations, minimizing payload oscillation during movement.</p>
                     <div class="project-tech">
                         <span class="tech-tag">MATLAB</span>
                         <span class="tech-tag">Simulink</span>
@@ -224,8 +236,8 @@
                     </div>
                 </div>
                 <div class="project-content">
-                    <h3 class="project-title">IoT Temperature Monitoring</h3>
-                    <p class="project-description">Wireless sensor network for real-time temperature monitoring with DMA optimization and cloud integration.</p>
+                    <h3 class="project-title" data-i18n="project.iot.title">IoT Temperature Monitoring</h3>
+                    <p class="project-description" data-i18n="project.iot.desc">Wireless sensor network for real-time temperature monitoring with DMA optimization and cloud integration.</p>
                     <div class="project-tech">
                         <span class="tech-tag">STM32</span>
                         <span class="tech-tag">IoT</span>
@@ -242,8 +254,8 @@
                     </div>
                 </div>
                 <div class="project-content">
-                    <h3 class="project-title">Prosthetic Elbow System</h3>
-                    <p class="project-description">Biomechanical design for adaptive prosthetic elbow with neural control interface and force feedback.</p>
+                    <h3 class="project-title" data-i18n="project.elbow.title">Prosthetic Elbow System</h3>
+                    <p class="project-description" data-i18n="project.elbow.desc">Biomechanical design for adaptive prosthetic elbow with neural control interface and force feedback.</p>
                     <div class="project-tech">
                         <span class="tech-tag">SolidWorks</span>
                         <span class="tech-tag">Biomechanics</span>
@@ -260,8 +272,8 @@
                     </div>
                 </div>
                 <div class="project-content">
-                    <h3 class="project-title">Chess Game</h3>
-                    <p class="project-description">Interactive chess game implementation with AI opponent and advanced move validation algorithms.</p>
+                    <h3 class="project-title" data-i18n="project.chess.title">Chess Game</h3>
+                    <p class="project-description" data-i18n="project.chess.desc">Interactive chess game implementation with AI opponent and advanced move validation algorithms.</p>
                     <div class="project-tech">
                         <span class="tech-tag">Python</span>
                         <span class="tech-tag">PyGame</span>
@@ -278,8 +290,8 @@
                     </div>
                 </div>
                 <div class="project-content">
-                    <h3 class="project-title">IEEE BibTex Generator</h3>
-                    <p class="project-description">Automated tool for generating IEEE format bibliography entries from research paper metadata.</p>
+                    <h3 class="project-title" data-i18n="project.ieee.title">IEEE BibTex Generator</h3>
+                    <p class="project-description" data-i18n="project.ieee.desc">Automated tool for generating IEEE format bibliography entries from research paper metadata.</p>
                     <div class="project-tech">
                         <span class="tech-tag">Python</span>
                         <span class="tech-tag">Web Scraping</span>
@@ -290,7 +302,32 @@
         </div>
     </section>
 <script src="https://unpkg.com/scrollreveal"></script>
-<script type="text/javascript" src="scripts.js"></script>
+</section>
+
+    <!-- Footer (minimal) -->
+    <footer class="site-footer site-footer--small">
+        <div class="footer-small-wrap">
+            <div class="footer-line">
+                <div class="footer-name">Sadeep Ariyarathna
+                    <span class="signature-underline" aria-hidden="true"></span>
+                </div>
+                <div class="footer-social">
+                    <!-- back-to-top widget removed from footer; floating widget will appear when needed -->
+                </div>
+            </div>
+            <div class="footer-copy">&copy; <span id="current-year"></span></div>
+            <div id="latest-commit" class="footer-commit">
+                <a href="https://github.com/elemenceOR/elemenceOR.github.io" target="_blank" rel="noopener noreferrer">View source on GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+    <!-- Floating Back-to-top widget (hidden by default) -->
+    <button id="back-to-top-widget" class="back-to-top-widget" aria-hidden="true" aria-label="Back to top" title="Back to top">
+        <img src="img/icon.png" alt="robot icon" class="back-to-top-icon">
+    </button>
 </body>
 
 </html>

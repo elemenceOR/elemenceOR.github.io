@@ -1,0 +1,134 @@
+{
+  "en": {
+    "nav.home": "Home",
+    "nav.skills": "Skills",
+    "nav.experience": "Experience",
+    "nav.education": "Education",
+    "nav.projects": "Projects",
+
+    "hero.hi": "Hello!<br>I'm<br>Sadeep",
+    "hero.subtitle": "Mechatronics & Systems Engineer",
+    "hero.location": "Dortmund, Germany",
+
+    "skills.title": "Technical Expertise",
+    "skills.subtitle": "Comprehensive skill set spanning robotics, AI, and engineering design",
+
+    "experience.title": "Professional Journey & Education",
+    "experience.subtitle": "Building expertise through diverse engineering challenges and academic excellence",
+
+    "projects.title": "Featured Projects",
+    "projects.subtitle": "Innovative solutions at the intersection of AI, robotics, and engineering",
+
+    "cv.en": "Download CV (EN)",
+    "cv.de": "Download CV (DE)",
+
+    "project.grid.title": "Intelligent Grid Navigation",
+    "project.grid.desc": "Advanced reinforcement learning system for autonomous navigation in complex grid environments with dynamic obstacles.",
+
+    "project.crane.title": "Anti-Sway Crane Control",
+    "project.crane.desc": "Non-linear control system for precision crane operations, minimizing payload oscillation during movement.",
+
+    "project.iot.title": "IoT Temperature Monitoring",
+    "project.iot.desc": "Wireless sensor network for real-time temperature monitoring with DMA optimization and cloud integration.",
+
+    "project.elbow.title": "Prosthetic Elbow System",
+    "project.elbow.desc": "Biomechanical design for adaptive prosthetic elbow with neural control interface and force feedback.",
+
+    "project.chess.title": "Chess Game",
+    "project.chess.desc": "Interactive chess game implementation with AI opponent and advanced move validation algorithms.",
+
+    "project.ieee.title": "IEEE BibTex Generator",
+    "project.ieee.desc": "Automated tool for generating IEEE format bibliography entries from research paper metadata.",
+
+    "work.claas.title": "E/E Architecture Intern",
+    "work.claas.company": "CLAAS E-Systems, Germany",
+    "work.claas.duration": "2024 Oct - 2025 July",
+    "work.claas.desc": "Developed efficient and user-friendly workflows for architecture model merging and merge conflict resolution.",
+
+    "work.atlas.title": "Mechatronics Engineer",
+    "work.atlas.company": "AtlasLabs, Sri Lanka",
+    "work.atlas.duration": "2022 - 2023",
+    "work.atlas.desc": "Led PCB design projects, component validation, and 3D design for production. Implemented automation solutions and managed full product development lifecycle.",
+
+    "work.mas.title": "Engineering Intern",
+    "work.mas.company": "MAS Holdings, Sri Lanka",
+    "work.mas.duration": "2021 - 2022",
+    "work.mas.desc": "Designed manufacturing components using DFA/DFM principles, programmed PLCs, and developed control systems for industrial automation.",
+
+    "edu.master.title": "Master of Engineering",
+    "edu.master.company": "South Westphalia University of Applied Sciences, Germany",
+    "edu.master.duration": "2025",
+    "edu.master.desc": "Specialized in System Engineering and Engineering Management with focus on control systems, machine learning, system architecture, and project management.",
+
+    "edu.bachelor.title": "Bachelor of Engineering",
+    "edu.bachelor.company": "General Sir John Kotelawala Defence University, Sri Lanka",
+    "edu.bachelor.duration": "2022",
+    "edu.bachelor.desc": "Specialized in Mechatronics Engineering with focus on control systems, automation, robotics, and mechanical design."
+   },
+  "de": {
+    "nav.home": "Start",
+    "nav.skills": "Fähigkeiten",
+    "nav.experience": "Erfahrung",
+    "nav.education": "Bildung",
+    "nav.projects": "Projekte",
+
+    "hero.hi": "Hallo!<br>Ich bin<br>Sadeep",
+    "hero.subtitle": "Mechatronik- & Systemingenieur",
+    "hero.location": "Dortmund, Deutschland",
+
+    "skills.title": "Technische Expertise",
+    "skills.subtitle": "Umfassende Fähigkeiten in Robotik, KI und Ingenieursdesign",
+
+    "experience.title": "Beruflicher Werdegang & Ausbildung",
+    "experience.subtitle": "Aufbau von Fachwissen durch verschiedene ingenieurtechnische Herausforderungen und akademische Exzellenz",
+
+    "projects.title": "Ausgewählte Projekte",
+    "projects.subtitle": "Innovative Lösungen an der Schnittstelle von KI, Robotik und Ingenieurwesen",
+
+    "cv.en": "CV herunterladen (EN)",
+    "cv.de": "CV herunterladen (DE)",
+
+    "project.grid.title": "Intelligente Gitter-Navigation",
+    "project.grid.desc": "Fortschrittliches Reinforcement-Learning-System für autonome Navigation in komplexen Gitterumgebungen mit dynamischen Hindernissen.",
+
+    "project.crane.title": "Anti-Sway Kransteuerung",
+    "project.crane.desc": "Nichtlineares Regelungssystem für präzise Kranoperationen, Minimierung von Schwingungen der Last während der Bewegung.",
+
+    "project.iot.title": "IoT Temperaturüberwachung",
+    "project.iot.desc": "Drahtloses Sensornetzwerk zur Echtzeit-Temperaturüberwachung mit DMA-Optimierung und Cloud-Integration.",
+
+    "project.elbow.title": "Prothetisches Ellbogen-System",
+    "project.elbow.desc": "Biomechanisches Design für adaptiven prothetischen Ellbogen mit neuronaler Steuerungsschnittstelle und Kraftfeedback.",
+
+    "project.chess.title": "Schachspiel",
+    "project.chess.desc": "Interaktives Schachspiel mit KI-Gegner und fortschrittlichen Zugvalidierungsalgorithmen.",
+
+    "project.ieee.title": "IEEE BibTex Generator",
+    "project.ieee.desc": "Automatisiertes Tool zur Generierung von IEEE-Bibliographieeinträgen aus Metadaten wissenschaftlicher Arbeiten.",
+
+    "work.claas.title": "E/E Architektur Praktikant",
+    "work.claas.company": "CLAAS E-Systems, Deutschland",
+    "work.claas.duration": "2024 Okt - 2025 Juli",
+    "work.claas.desc": "Entwickelte effiziente und benutzerfreundliche Workflows für das Zusammenführen von Architekturmodellen und die Lösung von Merge-Konflikten.",
+
+    "work.atlas.title": "Mechatronik-Ingenieur",
+    "work.atlas.company": "AtlasLabs, Sri Lanka",
+    "work.atlas.duration": "2022 - 2023",
+    "work.atlas.desc": "Leitete PCB-Designprojekte, Bauteilvalidierung und 3D-Design für die Produktion. Implementierte Automatisierungslösungen und verwaltete den gesamten Produktentwicklungszyklus.",
+
+    "work.mas.title": "Ingenieurpraktikant",
+    "work.mas.company": "MAS Holdings, Sri Lanka",
+    "work.mas.duration": "2021 - 2022",
+    "work.mas.desc": "Entwarf Fertigungskomponenten nach DFA/DFM-Prinzipien, programmierte SPS und entwickelte Steuerungssysteme für die industrielle Automatisierung.",
+
+    "edu.master.title": "Master of Engineering",
+    "edu.master.company": "Fachhochschule Südwestfalen, Deutschland",
+    "edu.master.duration": "2025",
+    "edu.master.desc": "Spezialisiert auf System Engineering und Engineering Management mit Schwerpunkt auf Regelungstechnik, maschinellem Lernen, Systemarchitektur und Projektmanagement.",
+
+    "edu.bachelor.title": "Bachelor of Engineering",
+    "edu.bachelor.company": "General Sir John Kotelawala Defence University, Sri Lanka",
+    "edu.bachelor.duration": "2022",
+    "edu.bachelor.desc": "Spezialisiert auf Mechatronik mit Schwerpunkt auf Regelungstechnik, Automatisierung, Robotik und mechanischem Design."
+  }
+}
