@@ -25,6 +25,9 @@
     "project.grid.title": "Intelligent Grid Navigation",
     "project.grid.desc": "Advanced reinforcement learning system for autonomous navigation in complex grid environments with dynamic obstacles.",
 
+  "project.motion.title": "Motion Monitoring System",
+  "project.motion.desc": "A WiFi-connected IoT sensor system built to continuously collects motion and temperature data",
+
     "project.crane.title": "Anti-Sway Crane Control",
     "project.crane.desc": "Non-linear control system for precision crane operations, minimizing payload oscillation during movement.",
 
@@ -90,6 +93,9 @@
 
     "project.grid.title": "Intelligente Gitter-Navigation",
     "project.grid.desc": "Fortschrittliches Reinforcement-Learning-System für autonome Navigation in komplexen Gitterumgebungen mit dynamischen Hindernissen.",
+
+  "project.motion.title": "Motion Monitoring System",
+  "project.motion.desc": "Ein WiFi-verbundenes IoT-Sensorsystem, das kontinuierlich Bewegungs- und Temperaturdaten erfasst",
 
     "project.crane.title": "Anti-Sway Kransteuerung",
     "project.crane.desc": "Nichtlineares Regelungssystem für präzise Kranoperationen, Minimierung von Schwingungen der Last während der Bewegung.",
