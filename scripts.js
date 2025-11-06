@@ -1,11 +1,17 @@
 // Smooth scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        });
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        
+        // Only prevent default and smooth scroll if target exists on current page
+        if (targetElement) {
+            e.preventDefault();
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
     });
 });
 
@@ -41,6 +47,8 @@ window.addEventListener('scroll', () => {
 // Particle effect for hero section
 const createParticles = () => {
     const hero = document.querySelector('.hero');
+    if (!hero) return; // Only create particles if hero section exists
+    
     const particleCount = 50;
     
     for (let i = 0; i < particleCount; i++) {
@@ -58,8 +66,31 @@ const createParticles = () => {
     }
 };
 
+// Particle effect for projects header section (if exists)
+const createProjectsParticles = () => {
+    const projectsHeader = document.querySelector('.projects-header');
+    if (!projectsHeader) return;
+    
+    const particleCount = 30;
+    
+    for (let i = 0; i < particleCount; i++) {
+        const particle = document.createElement('div');
+        particle.style.position = 'absolute';
+        particle.style.width = Math.random() * 3 + 1 + 'px';
+        particle.style.height = particle.style.width;
+        particle.style.background = '#6366f1';
+        particle.style.borderRadius = '50%';
+        particle.style.opacity = Math.random() * 0.5;
+        particle.style.left = Math.random() * 100 + '%';
+        particle.style.top = Math.random() * 100 + '%';
+        particle.style.animation = `float ${Math.random() * 10 + 10}s infinite linear`;
+        projectsHeader.appendChild(particle);
+    }
+};
+
 // Initialize particles
 createParticles();
+createProjectsParticles();
 
 // Mobile Navigation Toggle
 const navToggle = document.getElementById('nav-toggle');

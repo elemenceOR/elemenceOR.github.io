@@ -18,6 +18,15 @@
 
     "projects.title": "Featured Projects",
     "projects.subtitle": "Innovative solutions at the intersection of AI, robotics, and engineering",
+    "projects.viewAll": "View All Projects",
+    "projects.allTitle": "All Projects",
+    "projects.allSubtitle": "Explore my portfolio of engineering and technology solutions",
+    "projects.filter.title": "Filter by Skills",
+    "projects.filter.clear": "Clear Filters",
+    "projects.showing": "Showing",
+    "projects.projects": "projects",
+    "projects.noResults": "No projects found",
+    "projects.noResultsDesc": "Try adjusting your filters to see more projects",
 
     "cv.en": "Download CV (EN)",
     "cv.de": "Download CV (DE)",
@@ -87,6 +96,15 @@
 
     "projects.title": "Ausgewählte Projekte",
     "projects.subtitle": "Innovative Lösungen an der Schnittstelle von KI, Robotik und Ingenieurwesen",
+    "projects.viewAll": "Alle Projekte ansehen",
+    "projects.allTitle": "Alle Projekte",
+    "projects.allSubtitle": "Entdecken Sie mein Portfolio an Engineering- und Technologielösungen",
+    "projects.filter.title": "Nach Fähigkeiten filtern",
+    "projects.filter.clear": "Filter löschen",
+    "projects.showing": "Anzeigen",
+    "projects.projects": "Projekte",
+    "projects.noResults": "Keine Projekte gefunden",
+    "projects.noResultsDesc": "Versuchen Sie, Ihre Filter anzupassen, um mehr Projekte zu sehen",
 
     "cv.en": "CV herunterladen (EN)",
     "cv.de": "CV herunterladen (DE)",
