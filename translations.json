@@ -40,6 +40,9 @@
     "project.crane.title": "Anti-Sway Crane Control",
     "project.crane.desc": "Non-linear control system for precision crane operations, minimizing payload oscillation during movement.",
 
+    "project.rl-crane.title": "Overhead Crane Control using Reinforcement Learning",
+    "project.rl-crane.desc": "Reinforcement Learning solution using PPO and Curriculum Learning to control an underactuated overhead crane, transporting loads while actively damping sway.",
+
     "project.iot.title": "IoT Temperature Monitoring",
     "project.iot.desc": "Wireless sensor network for real-time temperature monitoring with DMA optimization and cloud integration.",
 
@@ -117,6 +120,9 @@
 
     "project.crane.title": "Anti-Sway Kransteuerung",
     "project.crane.desc": "Nichtlineares Regelungssystem für präzise Kranoperationen, Minimierung von Schwingungen der Last während der Bewegung.",
+
+    "project.rl-crane.title": "Brückenkran-Steuerung mit Reinforcement Learning",
+    "project.rl-crane.desc": "Reinforcement-Learning-Lösung mit PPO und Curriculum Learning zur Steuerung eines unteraktuierten Brückenkrans, der Lasten transportiert und gleichzeitig aktiv Schwingungen dämpft.",
 
     "project.iot.title": "IoT Temperaturüberwachung",
     "project.iot.desc": "Drahtloses Sensornetzwerk zur Echtzeit-Temperaturüberwachung mit DMA-Optimierung und Cloud-Integration.",
