@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Projects - Sadeep Ariyarathna</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="icon" href="img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css" type="text/css">
@@ -13,7 +13,7 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">Sadeep Ariyarathna</div>
+            <a class="logo" href="index.html#home">Sadeep Ariyarathna</a>
             <div class="nav-actions">
                 <div class="nav-toggle" id="nav-toggle">
                     <i class='bx bx-menu'></i>
@@ -42,7 +42,7 @@
         </div>
         <div class="projects-header-content fade-in">
             <h1 data-i18n="projects.allTitle">All Projects</h1>
-            <p data-i18n="projects.allSubtitle">Explore my portfolio of engineering and technology solutions</p>
+            <!-- <p data-i18n="projects.allSubtitle">Explore my portfolio of engineering and technology solutions</p> -->
         </div>
     </section>
 
@@ -153,20 +153,24 @@
             </div>
 
             <!-- Project 5: IoT Temperature Monitoring -->
-            <div class="project-card fade-in" data-tags="STM32,IoT,C++">
+            <div class="project-card fade-in" data-tags="STM32,C,I2C,DMA,MQTT,GSM,IoT,Embedded">
                 <div class="project-image">
-                    <img src="img\stm.png" alt="IoT Temperature Monitoring" style="width: 100%; height: 100%; object-fit: cover;">
+                    <img src="img\stm.png" alt="Cellular IoT Temperature Monitor" style="width: 100%; height: 100%; object-fit: cover;">
                     <div class="project-overlay">
                         <a href="https://github.com/elemenceOR/DMA_tmp" target="_blank" class="btn btn-primary">View Project</a>
                     </div>
                 </div>
                 <div class="project-content">
-                    <h3 class="project-title" data-i18n="project.iot.title">IoT Temperature Monitoring</h3>
-                    <p class="project-description" data-i18n="project.iot.desc">Wireless sensor network for real-time temperature monitoring with DMA optimization and cloud integration.</p>
+                    <h3 class="project-title" data-i18n="project.iot.title">Cellular IoT Temperature Monitor</h3>
+                    <p class="project-description" data-i18n="project.iot.desc">C-based STM32F446RE application collecting real-time MCP9600 temperature data over I2C and publishing JSON payloads to an MQTT broker via a SIM7600 GSM module, using DMA and AT commands for efficient data transfer.</p>
                     <div class="project-tech">
                         <span class="tech-tag">STM32</span>
-                        <span class="tech-tag">IoT</span>
-                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">C</span>
+                        <span class="tech-tag">I2C</span>
+                        <span class="tech-tag">DMA</span>
+                        <span class="tech-tag">MQTT</span>
+                        <span class="tech-tag">GSM / SIM7600</span>
+                        <span class="tech-tag">Embedded</span>
                     </div>
                 </div>
             </div>
@@ -211,21 +215,23 @@
                 </div>
             </div>
 
-            <!-- Project 8: IEEE BibTex Generator -->
-            <div class="project-card fade-in" data-tags="Python,Web Scraping,PyPI">
+            <!-- Project 9: Smart HVAC System -->
+            <div class="project-card fade-in" data-tags="PLC,Structured Text,HMI,Automation,HVAC">
                 <div class="project-image">
-                    <img src="img\ieee.png" alt="IEEE BibTex Generator" style="width: 100%; height: 100%; object-fit: cover;">
+                    <img src="img\hvca.png" alt="Smart HVAC System" style="width: 100%; height: 100%; object-fit: cover;">
                     <div class="project-overlay">
-                        <a href="https://pypi.org/project/ieeebib/" target="_blank" class="btn btn-primary">View Project</a>
+                        <a href="https://github.com/elemenceOR/HVAC" target="_blank" class="btn btn-primary">View Project</a>
                     </div>
                 </div>
                 <div class="project-content">
-                    <h3 class="project-title" data-i18n="project.ieee.title">IEEE BibTex Generator</h3>
-                    <p class="project-description" data-i18n="project.ieee.desc">Automated tool for generating IEEE format bibliography entries from research paper metadata.</p>
+                    <h3 class="project-title" data-i18n="project.hvac.title">Smart HVAC System</h3>
+                    <p class="project-description" data-i18n="project.hvac.desc">PLC-based HVAC control system programmed in Structured Text with an HMI interface for real-time climate monitoring, zone control, and energy-efficient automation.</p>
                     <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Web Scraping</span>
-                        <span class="tech-tag">PyPI</span>
+                        <span class="tech-tag">PLC</span>
+                        <span class="tech-tag">Structured Text</span>
+                        <span class="tech-tag">HMI</span>
+                        <span class="tech-tag">Automation</span>
+                        <span class="tech-tag">HVAC</span>
                     </div>
                 </div>
             </div>
@@ -251,9 +257,6 @@
                 </div>
             </div>
             <div class="footer-copy">&copy; <span id="current-year"></span></div>
-            <div id="latest-commit" class="footer-commit">
-                <a href="https://github.com/elemenceOR/elemenceOR.github.io" target="_blank" rel="noopener noreferrer">View source on GitHub</a>
-            </div>
         </div>
     </footer>
 

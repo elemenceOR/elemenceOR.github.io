@@ -176,7 +176,7 @@ function applyTranslations(lang) {
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
         const text = (translations[lang] && translations[lang][key]) || (translations['en'] && translations['en'][key]) || '';
-        if (text.includes('<br>')) el.innerHTML = text; else el.textContent = text;
+        if (/<[^>]+>/.test(text)) el.innerHTML = text; else el.textContent = text;
     });
 
     document.documentElement.lang = lang;
@@ -306,41 +306,4 @@ document.addEventListener('DOMContentLoaded', async () => {
         ['scroll', 'mousemove', 'touchstart', 'keydown'].forEach(evt => window.addEventListener(evt, resetIdle, { passive: true }));
     }
 
-    // Populate latest commit info from GitHub (public repo)
-    const commitEl = document.getElementById('latest-commit');
-    if (commitEl) {
-        // repo owner/name — adjust if your repo differs
-        const repoOwner = 'elemenceOR';
-        const repoName = 'elemenceOR.github.io';
-        const commitsApi = `https://api.github.com/repos/${repoOwner}/${repoName}/commits?per_page=1`;
-
-        fetch(commitsApi, { cache: 'no-store' })
-            .then(r => r.json())
-            .then(data => {
-                if (Array.isArray(data) && data[0]) {
-                    const c = data[0];
-                    const sha = c.sha.slice(0, 7);
-                    const author = (c.commit.author && c.commit.author.name) || (c.author && c.author.login) || 'unknown';
-                    const iso = c.commit.author.date;
-                    const dateFull = new Date(iso).toLocaleString();
-                    const message = (c.commit && c.commit.message) ? c.commit.message.split('\n')[0] : '';
-                    const link = c.html_url;
-
-                    // Set link with tooltip (commit message) and friendly text
-                    const a = document.createElement('a');
-                    a.href = link;
-                    a.target = '_blank';
-                    a.rel = 'noopener noreferrer';
-                    a.title = message;
-                    a.innerHTML = `Commit <strong>${sha}</strong> • ${author} • ${dateFull}`;
-                    // clear existing and append
-                    commitEl.innerHTML = '';
-                    commitEl.appendChild(a);
-                }
-            })
-            .catch(err => {
-                // leave default link in place (view source link)
-                console.debug('Could not load latest commit info', err);
-            });
-    }
 });

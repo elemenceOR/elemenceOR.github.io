@@ -43,8 +43,8 @@
     "project.rl-crane.title": "Overhead Crane Control using Reinforcement Learning",
     "project.rl-crane.desc": "Reinforcement Learning solution using PPO and Curriculum Learning to control an underactuated overhead crane, transporting loads while actively damping sway.",
 
-    "project.iot.title": "IoT Temperature Monitoring",
-    "project.iot.desc": "Wireless sensor network for real-time temperature monitoring with DMA optimization and cloud integration.",
+    "project.iot.title": "Cellular IoT Temperature Monitor",
+    "project.iot.desc": "C-based STM32F446RE application collecting real-time MCP9600 temperature data over I2C and publishing JSON payloads to an MQTT broker via a SIM7600 GSM module, using DMA and AT commands for efficient data transfer.",
 
     "project.elbow.title": "Prosthetic Elbow System",
     "project.elbow.desc": "Biomechanical design for adaptive prosthetic elbow with neural control interface and force feedback.",
@@ -52,13 +52,18 @@
     "project.chess.title": "Chess Game",
     "project.chess.desc": "Interactive chess game implementation with AI opponent and advanced move validation algorithms.",
 
-    "project.ieee.title": "IEEE BibTex Generator",
-    "project.ieee.desc": "Automated tool for generating IEEE format bibliography entries from research paper metadata.",
+    "project.hvac.title": "Smart HVAC System",
+    "project.hvac.desc": "PLC-based HVAC control system programmed in Structured Text with an HMI interface for real-time climate monitoring, zone control, and energy-efficient automation.",
 
     "work.claas.title": "E/E Architecture Intern",
     "work.claas.company": "CLAAS E-Systems, Germany",
     "work.claas.duration": "2024 Oct - 2025 July",
     "work.claas.desc": "Developed efficient and user-friendly workflows for architecture model merging and merge conflict resolution.",
+
+    "work.fh.title": "Research Assistant",
+    "work.fh.company": "Fachhochschule Südwestfalen, Soest, Germany",
+    "work.fh.duration": "Mar 2024 - Aug 2024",
+    "work.fh.desc": "Built a C-based STM32F446RE system that collects real-time MCP9600 temperature data via I2C and sends JSON payloads to an MQTT broker over a SIM7600 cellular module using DMA and AT commands.",
 
     "work.atlas.title": "Mechatronics Engineer",
     "work.atlas.company": "AtlasLabs, Sri Lanka",
@@ -73,12 +78,12 @@
     "edu.master.title": "Master of Engineering",
     "edu.master.company": "South Westphalia University of Applied Sciences, Germany",
     "edu.master.duration": "2025",
-    "edu.master.desc": "Specialized in System Engineering and Engineering Management with focus on control systems, machine learning, system architecture, and project management.",
+    "edu.master.desc": "Specialized in System Engineering and Engineering Management with focus on control systems, machine learning, system architecture, and project management.<br><span class='thesis-highlight'>Thesis: A Collaboration Workflow for Merging System Architecture Models – An Example from the Agriculture Industry</span>",
 
     "edu.bachelor.title": "Bachelor of Engineering",
     "edu.bachelor.company": "General Sir John Kotelawala Defence University, Sri Lanka",
     "edu.bachelor.duration": "2022",
-    "edu.bachelor.desc": "Specialized in Mechatronics Engineering with focus on control systems, automation, robotics, and mechanical design."
+    "edu.bachelor.desc": "Specialized in Mechatronics Engineering with focus on control systems, automation, robotics, and mechanical design.<br><span class='thesis-highlight'>Dean's List for 3 years for outstanding academic performance during the Bachelor of Engineering.</span>"
    },
   "de": {
     "nav.home": "Start",
@@ -124,8 +129,8 @@
     "project.rl-crane.title": "Brückenkran-Steuerung mit Reinforcement Learning",
     "project.rl-crane.desc": "Reinforcement-Learning-Lösung mit PPO und Curriculum Learning zur Steuerung eines unteraktuierten Brückenkrans, der Lasten transportiert und gleichzeitig aktiv Schwingungen dämpft.",
 
-    "project.iot.title": "IoT Temperaturüberwachung",
-    "project.iot.desc": "Drahtloses Sensornetzwerk zur Echtzeit-Temperaturüberwachung mit DMA-Optimierung und Cloud-Integration.",
+    "project.iot.title": "Zellulärer IoT-Temperaturmonitor",
+    "project.iot.desc": "C-basierte STM32F446RE-Anwendung zur Erfassung von MCP9600-Temperaturdaten in Echtzeit über I2C und Veröffentlichung von JSON-Nutzdaten an einen MQTT-Broker via SIM7600-GSM-Modul, unter Nutzung von DMA und AT-Befehlen für effizienten Datentransfer.",
 
     "project.elbow.title": "Prothetisches Ellbogen-System",
     "project.elbow.desc": "Biomechanisches Design für adaptiven prothetischen Ellbogen mit neuronaler Steuerungsschnittstelle und Kraftfeedback.",
@@ -133,13 +138,18 @@
     "project.chess.title": "Schachspiel",
     "project.chess.desc": "Interaktives Schachspiel mit KI-Gegner und fortschrittlichen Zugvalidierungsalgorithmen.",
 
-    "project.ieee.title": "IEEE BibTex Generator",
-    "project.ieee.desc": "Automatisiertes Tool zur Generierung von IEEE-Bibliographieeinträgen aus Metadaten wissenschaftlicher Arbeiten.",
+    "project.hvac.title": "Intelligentes HLK-System",
+    "project.hvac.desc": "SPS-basiertes HLK-Steuerungssystem, programmiert in Strukturiertem Text mit einer HMI-Oberfläche zur Echtzeit-Klimaüberwachung, Zonensteuerung und energieeffizienter Automatisierung.",
 
     "work.claas.title": "E/E Architektur Praktikant",
     "work.claas.company": "CLAAS E-Systems, Deutschland",
     "work.claas.duration": "2024 Okt - 2025 Juli",
     "work.claas.desc": "Entwickelte effiziente und benutzerfreundliche Workflows für das Zusammenführen von Architekturmodellen und die Lösung von Merge-Konflikten.",
+
+    "work.fh.title": "Wissenschaftlicher Mitarbeiter",
+    "work.fh.company": "Fachhochschule Südwestfalen, Soest, Deutschland",
+    "work.fh.duration": "Mär 2024 - Aug 2024",
+    "work.fh.desc": "Entwickelte ein C-basiertes STM32F446RE-System, das MCP9600-Temperaturdaten in Echtzeit über I2C erfasst und JSON-Nutzdaten über ein SIM7600-Mobilfunkmodul mithilfe von DMA und AT-Befehlen an einen MQTT-Broker sendet.",
 
     "work.atlas.title": "Mechatronik-Ingenieur",
     "work.atlas.company": "AtlasLabs, Sri Lanka",
@@ -154,11 +164,11 @@
     "edu.master.title": "Master of Engineering",
     "edu.master.company": "Fachhochschule Südwestfalen, Deutschland",
     "edu.master.duration": "2025",
-    "edu.master.desc": "Spezialisiert auf System Engineering und Engineering Management mit Schwerpunkt auf Regelungstechnik, maschinellem Lernen, Systemarchitektur und Projektmanagement.",
+    "edu.master.desc": "Spezialisiert auf System Engineering und Engineering Management mit Schwerpunkt auf Regelungstechnik, maschinellem Lernen, Systemarchitektur und Projektmanagement.<br><span class='thesis-highlight'>Masterarbeit: Ein Kollaborationsworkflow für das Zusammenführen von Systemarchitekturmodellen – Ein Beispiel aus der Agrarindustrie</span>",
 
     "edu.bachelor.title": "Bachelor of Engineering",
     "edu.bachelor.company": "General Sir John Kotelawala Defence University, Sri Lanka",
     "edu.bachelor.duration": "2022",
-    "edu.bachelor.desc": "Spezialisiert auf Mechatronik mit Schwerpunkt auf Regelungstechnik, Automatisierung, Robotik und mechanischem Design."
+    "edu.bachelor.desc": "Spezialisiert auf Mechatronik mit Schwerpunkt auf Regelungstechnik, Automatisierung, Robotik und mechanischem Design.<br><span class='thesis-highlight'>Drei Jahre in der Dean's List für herausragende akademische Leistungen während des Bachelorstudiums.</span>"
   }
 }
